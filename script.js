@@ -1,14 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Portfolio Loaded!");
-    
+    console.log("Portfolio Loaded Successfully!");
+
     const cards = document.querySelectorAll('.project-card');
-    cards.forEach(card => {
-        card.addEventListener('mouseover', () => {
-            card.style.transform = "translateY(-5px)";
-            card.style.transition = "0.3s";
+
+    if (cards.length > 0) {
+        cards.forEach(card => {
+            card.style.cursor = "pointer";
+
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = "scale(1.05)";
+                card.style.transition = "all 0.3s ease-in-out";
+                card.style.boxShadow = "0 10px 20px rgba(0,0,0,0.2)";
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = "scale(1)";
+                card.style.boxShadow = "none";
+            });
         });
-        card.addEventListener('mouseout', () => {
-            card.style.transform = "translateY(0)";
-        });
-    });
+    } else {
+        console.warn("No project cards found. Please check if your HTML has class='project-card'");
+    }
 });
