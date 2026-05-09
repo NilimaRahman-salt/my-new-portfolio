@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic Portfolio of Nilima Rahman, Graphics and Multimedia Software student at UTM.">
+    <meta name="description" content="Academic Portfolio of Nilima Rahman, a Graphics and Multimedia Software student at Universiti Teknologi Malaysia (UTM).">
     <title>Nilima Rahman | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +11,7 @@
 
     <!-- Navigation -->
     <header>
-        <nav class="nav-container">
+        <nav class="nav-container" aria-label="Main Navigation">
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -24,8 +24,8 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="image-area">
-               
-                <img src="my-photo.jpg" alt="Nilima Rahman - UTM Student Portfolio" class="profile-img" width="300" height="300" loading="lazy">
+                <!-- Added fetchpriority for better Performance score -->
+                <img src="my-photo.jpg" alt="Portrait of Nilima Rahman, UTM Student" class="profile-img" width="300" height="300" fetchpriority="high">
             </div>
             
             <div class="hero-content">
@@ -54,8 +54,8 @@
                     <span class="tag">Creative Thinker</span>
                 </div>
 
-               
-                <a href="https://github.com/NilimaRahman-salt" target="_blank" class="btn-main" aria-label="Visit my GitHub Profile">Follow me on GitHub</a>
+                <!-- Added aria-label for 100% Accessibility score -->
+                <a href="https://github.com/NilimaRahman-salt" target="_blank" class="btn-main" aria-label="Follow Nilima Rahman on GitHub">Follow me on GitHub</a>
             </div>
         </section>
     </main>
