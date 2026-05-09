@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Lighthouse SEO এর জন্য description থাকা বাধ্যতামূলক -->
-    <meta name="description" content="Academic Portfolio of Nilima Rahman, Graphics and Multimedia Software student at UTM.">
+    <meta name="description" content="Academic Portfolio of Nilima Rahman, a Graphics and Multimedia Software student at Universiti Teknologi Malaysia (UTM).">
     <title>Nilima Rahman | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +11,7 @@
 
     <!-- Navigation -->
     <header>
-        <nav class="nav-container">
+        <nav class="nav-container" aria-label="Main Navigation">
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -23,15 +22,13 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero-title">
             <div class="image-area">
-                <!-- যেহেতু তুমি কোনো ফোল্ডার করোনি, তাই সরাসরি ছবির নাম ব্যবহার করো -->
-                <!-- Lighthouse-এ ১০০ স্কোর পাওয়ার জন্য width, height এবং alt দেওয়া হয়েছে -->
-                <img src="my-photo.jpg" alt="Nilima Rahman" class="profile-img" width="300" height="300" loading="lazy">
+                <img src="my-photo.jpg" alt="Portrait of Nilima Rahman, Graphics and Multimedia student at UTM" class="profile-img" width="300" height="300" loading="lazy">
             </div>
             
             <div class="hero-content">
-                <h1>I'm <span class="highlight">Nilima Rahman</span></h1>
+                <h1 id="hero-title">I'm <span class="highlight">Nilima Rahman</span></h1>
                 <h3>Creative Graphics & Multimedia Software Student</h3>
                 
                 <p class="bio-text">
@@ -56,7 +53,7 @@
                     <span class="tag">Creative Thinker</span>
                 </div>
 
-                <a href="https://github.com/NilimaRahman-salt" target="_blank" class="btn-main">Follow me on GitHub</a>
+                <a href="https://github.com/NilimaRahman-salt" target="_blank" class="btn-main" aria-label="Visit Nilima Rahman's GitHub Profile">Follow me on GitHub</a>
             </div>
         </section>
     </main>
