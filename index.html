@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lighthouse SEO এর জন্য description থাকা বাধ্যতামূলক -->
     <meta name="description" content="Academic Portfolio of Nilima Rahman, Graphics and Multimedia Software student at UTM.">
     <title>Nilima Rahman | Home</title>
     <link rel="stylesheet" href="style.css">
@@ -24,7 +25,9 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="image-area">
-                <img src="my-photo.jpg" alt="Nilima Rahman" class="profile-img">
+                <!-- যেহেতু তুমি কোনো ফোল্ডার করোনি, তাই সরাসরি ছবির নাম ব্যবহার করো -->
+                <!-- Lighthouse-এ ১০০ স্কোর পাওয়ার জন্য width, height এবং alt দেওয়া হয়েছে -->
+                <img src="my-photo.jpg" alt="Nilima Rahman" class="profile-img" width="300" height="300" loading="lazy">
             </div>
             
             <div class="hero-content">
@@ -37,7 +40,7 @@
                     Computer Science (Graphics and Multimedia Software), I focus on building user-centric digital solutions.
                 </p>
 
-                <!-- New Info Section: What I Do -->
+                <!-- Focus Section -->
                 <div class="mini-bio">
                     <p><strong>What I'm focused on:</strong></p>
                     <ul class="focus-list">
